@@ -1,10 +1,10 @@
 :root {
-    --theme-light: plum;
+    --theme-light: rgb(255, 121, 244);
     --theme-dark: darkblue;
 }
 
 * {
-    background-color: lightcyan;
+    background-color: rgb(197, 231, 231);
     font-family: 'Gill Sans MT', 'Arial', sans-serif;
 }
 
@@ -75,6 +75,73 @@ main section {
     border: 1px solid black;
     margin-bottom: 300px;
 }
+
+h3 {
+    font-size: 28px;
+    border-right: 4px solid var(--theme-dark);
+    display: inline-block;
+}
+
+
+a img {
+    border: 5px solid var(--theme-light)
+}
+
+#primary-work img {
+    width: 1000px;
+    height: auto;
+}
+
+.secondary-work img {
+    width: 450px;
+    height: auto;
+}
+
+#pic-link-container {
+    width: 75%;
+}
+
+#pic-link-container a {
+    position: relative;
+}
+
+.img-label {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--theme-dark);
+    padding: 10px;
+    background-color: var(--theme-light);
+}
+
+#primary-work .img-label {
+    font-size: 26px;
+    padding: 15px;
+}
+
+p span {
+    font-size: 10px;
+    background-color: inherit;
+}
+
+#primary-sublabel {
+    font-size: 12px;
+}
+
+
+
+
+
+#contact ul li {
+    display: inline;
+    font-size: 18px;
+    padding: 6px 20px;
+}
+
+
+
 /* ------------------ */
 /* End 'main' styling */
 
