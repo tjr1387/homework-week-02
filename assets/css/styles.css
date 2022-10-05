@@ -4,7 +4,7 @@
 }
 
 * {
-    background-color: rgb(197, 231, 231);
+    background-color: rgb(217, 251, 251);
     font-family: 'Gill Sans MT', 'Arial', sans-serif;
 }
 
@@ -48,7 +48,7 @@ nav a:hover {
 
 #subhead-container {
     position: relative;
-    border-bottom: 2px solid var(--theme-dark);
+    border-bottom: 6px double var(--theme-dark);
     margin-bottom: 10px;
 }
 
@@ -65,49 +65,70 @@ h2 {
     color: var(--theme-light);
     background-color: var(--theme-dark);
     padding: 20px;
+    transform: scale(1);
 }
 /* ------------------ */
 /* End header styling */
 
 /* 'Main' styling */
 /* -------------- */
+
 main section {
-    border: 1px solid black;
-    margin-bottom: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 30px;
+    color: var(--theme-dark);
     border-right: 4px solid var(--theme-dark);
-    display: inline-block;
+    grid-column: 1;
+    text-align: right;
+    padding: 10px;
+}
+
+#about-me p {
+    font-size: 18px;
+    padding: 10px;
+    grid-column: 2 / 5;
 }
 
 
+
+/* Styling specific to 'work' section */
+/* ---------------------------------- */
 a img {
-    border: 5px solid var(--theme-light)
-}
-
-#primary-work img {
-    width: 1000px;
-    height: auto;
-}
-
-.secondary-work img {
-    width: 450px;
-    height: auto;
+    border: 5px solid var(--theme-light);
+    margin: 10px;
 }
 
 #pic-link-container {
-    width: 75%;
+    grid-column: 2 / 5;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #pic-link-container a {
     position: relative;
 }
 
+#primary-work img {
+    width: 70%;
+    height: auto;
+    
+}
+
+.secondary-work img {
+    width: 30%;
+    height: auto;
+}
+
+
 .img-label {
     position: absolute;
-    left: 0;
+    left: 10px;
     bottom: 40px;
     font-size: 18px;
     font-weight: 700;
@@ -129,29 +150,68 @@ p span {
 #primary-sublabel {
     font-size: 12px;
 }
+/* ----------------------------- */
+/* End of 'work' section styling */
 
+#contact {
+    position: relative;
+    min-height: 120px;
+}
 
-
-
+#contact ul {
+    grid-column: 2 / 5;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #contact ul li {
     display: inline;
-    font-size: 18px;
-    padding: 6px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    padding: 0 20px;
 }
 
+#contact ul li a {
+    text-decoration: none;
+    color: black;
+}
 
-
+#contact ul li a:hover {
+    color: var(--theme-light);
+}
 /* ------------------ */
 /* End 'main' styling */
 
-/* Footer styling (to end) */
-/* ----------------------- */
+
+
+
+/* Footer styling */
+/* -------------- */
 footer {
     text-align: center;
     color: var(--theme-dark);
     font-size: 28px;
-    padding-bottom: 10px;
+    padding: 25px 0;
 }
+/* ------------------ */
+/* End footer styling */
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    #subhead-container {
+        display: none;
+    }
+}
+
 
 
