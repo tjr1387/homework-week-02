@@ -1,5 +1,6 @@
 :root {
-    --theme: plum;
+    --theme-light: plum;
+    --theme-dark: darkblue;
 }
 
 * {
@@ -9,26 +10,60 @@
 
 /* Header styling */
 /* -------------- */
+#head-container {
+    background-color: var(--theme-light);
+    height: 90px;
+    border-bottom: 1px solid var(--theme-dark);
+    padding-top: 20px;
+}
+
 h1 {
+    background-color: inherit;
     display: inline;
-    
+    color: rgb(9, 6, 56);
+    font-family: 'Tahoma', sans-serif;
+    font-size: 38px;
+    padding: 25px;
 }
 
 nav {
+    background-color: inherit;
     display: inline;
-    
+    float: right;
+    padding: 15px;
 }
 
-#subtitle img {         /* need to improve on this so its more reponsive */
-    width: 100%;
-    max-height: 400px;
+nav a {
+    background-color: inherit;
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--theme-dark);
+    padding: 0 20px;
 }
 
-span {          /* this styling is NOT RESPONSIVE right now*/
+nav a:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#subhead-container {
     position: relative;
-    top: -300px;
-    left: 70%;
-    background-color: var(--theme);
+    border-bottom: 2px solid var(--theme-dark);
+    margin-bottom: 10px;
+}
+
+#subhead-container img {
+    height: auto;
+    width: 100%;
+}
+
+h2 {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-size: 32px;
+    color: var(--theme-light);
+    background-color: var(--theme-dark);
     padding: 20px;
 }
 /* ------------------ */
@@ -36,7 +71,7 @@ span {          /* this styling is NOT RESPONSIVE right now*/
 
 /* 'Main' styling */
 /* -------------- */
-section {
+main section {
     border: 1px solid black;
     margin-bottom: 300px;
 }
@@ -47,7 +82,7 @@ section {
 /* ----------------------- */
 footer {
     text-align: center;
-    color: darkblue;
+    color: var(--theme-dark);
     font-size: 28px;
     padding-bottom: 10px;
 }
