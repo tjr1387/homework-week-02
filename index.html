@@ -6,29 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
     <header>
+        <h1>Tyler Reimer</h1>
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+            <a href="./assets/resume.html">Resume</a>
+        </nav>
 
-        <!-- gona want a top bar with the h1 title, and a nav bar w/ 3-4 page links -->
-            <!-- these 'page links' will jump down to the 'about me', 'work', and 'contact me' sections of the page-->
-            <!-- there is one more link on the mock-up that says 'resume' but theres no section ON the page.. maybe this links to a external file/page -- but for now itll be a dummy one -->
-                <!-- these 'links' are just an 'href' to the ID of the sections -->
-        <!-- then, rpobly still here in the header, a picture backgrounded subtitle (h2) -->
+        <!-- ill want to do a media query to make this h2 go poof once the screen gets narrow enough (display: none) -->
+        <h2 id="subtitle">
+            <img src="./assets/images/subheader-colors.jpg" alt="Colorful background for subheader" />
+            <span> Speedrunning, Handstanding & Coding </span> 
+        </h2>
+
     </header>
     <main>
         <!-- first section 'about me' (probly an h3, tho maybe h2?) with a simple 'p' tag write up -->
-
+            <section id="about-me">
+                <h3>About Me</h3>
+                <p> I was born in Canada, about an hour west of Vancouver, B.C. My father was a Boston sports fan, and I grew to become one also. In 1996, he took a job interview in Massachusetts and was offered the position. <br>
+                    <br>
+                    Growing up I was a relatively serious gymnast -- doing it through high school graduation. I attended William and Mary; after a few years there, I quit gymnastics on top of dropping out -- moving back up to New England to do what college dropouts in niche sports wind up doing -- coaching that sport. I spent roughly 12 years coaching gymnastics, knowing that eventually I would need to do something else if I ever wanted to own a house or have a family. I am now working towards becoming a credible web developer. Fingers crossed!
+                </p>
+            </section>
         <!-- 2nd section (the biggest piece) is 'work' with one BIG picture (acts as a link to an external site) -->
             <!-- below that, 4 smaller picture-backgrounded links which would point to other small projects (again, external live sites) -->
-
-        <!-- 3rd (last section is a 'contact' with a number, email, github, and say 2 other things, like twitter/spotify -- tho maybe ill do my speedrun profile or something) -->
+            <section id="work">
+                <h3>Work</h3>
+                <a href="#" id="primary-work">Feature picture-link</a>
+                <a href="" class="secondary-work">One</a>
+                <a href="" class="secondary-work">Two</a>
+                <a href="" class="secondary-work">Three</a>
+                <a href="" class="secondary-work">Four</a>
+            </section>
+            <section id="contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Phone: 555-555-5555</li>
+                    <li>Email: notreal@madeup.com</li>
+                    <li><a href="https://github.com/tjr1387">GitHub</a></li>
+                    <li><a href="#">Speedrun</a></li>
+                    <li><a href="#">Trails</a></li>
+                </ul>
+            </section>
+                
     </main>
     <footer>
-        <!-- there is no footer in the mock-up, unless that last 'contact' section IS one -- its styled parallel to the other sections though, which lead me to think it should be in the main body -->
-        <!-- so unless i decide to put that last section in the footer, ill make up some veyr small pointless one -->
+        2022 Dummy Porfolio!
     </footer>
 </body>
 

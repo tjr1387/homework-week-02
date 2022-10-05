@@ -1,7 +1,55 @@
-/* :root {
-
-} */
+:root {
+    --theme: plum;
+}
 
 * {
     background-color: lightcyan;
+    font-family: 'Gill Sans MT', 'Arial', sans-serif;
 }
+
+/* Header styling */
+/* -------------- */
+h1 {
+    display: inline;
+    
+}
+
+nav {
+    display: inline;
+    
+}
+
+#subtitle img {         /* need to improve on this so its more reponsive */
+    width: 100%;
+    max-height: 400px;
+}
+
+span {          /* this styling is NOT RESPONSIVE right now*/
+    position: relative;
+    top: -300px;
+    left: 70%;
+    background-color: var(--theme);
+    padding: 20px;
+}
+/* ------------------ */
+/* End header styling */
+
+/* 'Main' styling */
+/* -------------- */
+section {
+    border: 1px solid black;
+    margin-bottom: 300px;
+}
+/* ------------------ */
+/* End 'main' styling */
+
+/* Footer styling (to end) */
+/* ----------------------- */
+footer {
+    text-align: center;
+    color: darkblue;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+
