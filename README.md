@@ -14,7 +14,7 @@ It is very important to note that I have no real work to show. All the links, wh
 
 Screenshot: You can find it inside the 'assets' folder, titled 'my-mockup'.
 
-Link to live site: 
+Link to live site: https://tjr1387.github.io/homework-week-02
 
 ## Flaws
 
