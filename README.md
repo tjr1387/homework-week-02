@@ -12,7 +12,8 @@ N/A
 
 As of Project One, the primary picture link, though still a picture of a gymnast (lol), will actually navigate to that project (The Boozy Chef). Otherwise, the other links just go to various websites (and a non-existent resume) -- most of the time not even related the pictures (the one exception is the 'GitHub' link, which _does_ go to my GitHub). I felt this was okay because the point of the exercise was implementing responsive styling and functional HTML structure/links. It should also be noted that the minimum width I accounted for was 500px (browser constraint), which isn't ideal because I believe small phones go into the low 300s.
 
-Screenshot: You can find it inside the 'assets' folder, titled 'my-mockup'.
+Screenshot:
+![Sample portfolio](/assets/images/my-mockup-post-p1.png?raw=true "Portfolio with Project One link")
 
 Link to live site: https://tjr1387.github.io/homework-week-02
 
